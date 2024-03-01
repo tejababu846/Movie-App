@@ -1,0 +1,49 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "react-app",
+    "airbnb",
+    "prettier"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": "error",
+    "react/jsx-filename-extension": [1, {"extensions": [".js", ".jsx", ".tsx"]}],
+    "react/state-in-constructor": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-uses-react": "off",
+    "no-console": "off",
+    "react/prop-types": "off",
+    "jsx-a11y/label-has-associated-control": [
+      2,
+      {
+        "labelComponents": ["CustomLabel"],
+        "labelAttributes": ["label"]
+      }
+    ],
+    "jsx-a11y/click-events-have-key-events": "warn",
+    "jsx-a11y/no-noninteractive-element-interactions": "warn",
+    "react/prefer-stateless-function": "warn",
+    "no-unused-vars": "warn",
+    "jsx-a11y/alt-text": "warn",
+    "react/no-unused-state": "warn",
+    "react/button-has-type": "warn",
+    "react/no-unescaped-entities": "warn",
+    "react/jsx-props-no-spreading": "warn",
+    "operator-assignment": ["warn", "always"],
+    "radix": "warn"
+  }
+}
